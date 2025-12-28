@@ -7,7 +7,7 @@ def verificar_id(id):
         cur.execute("SELECT * FROM usuarios WHERE id = ?", (id,))
         return cur.fetchone()
 def verificar_email(email):
-    chave_api = '0fb1267373f206c20046ab01ad2db3efd5d8b970'
+    chave_api = '****************************'
     url = 'https://api.hunter.io/v2/email-verifier'
     params = {'email': email,
               'api_key': chave_api}
@@ -16,4 +16,5 @@ def verificar_email(email):
         if response.json()['data']['status'] == 'valid':
             return True
     else:
+
         return False

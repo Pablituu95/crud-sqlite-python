@@ -18,3 +18,7 @@ Projeto de estudo em Python que implementa um CRUD completo usando SQLite.
 ## Como executar
 ```bash
 python main.py
+
+## Para conseguir a api_key
+Acesse o site: https://hunter.io/dashboard, crie um usuário e vá para https://hunter.io/api-keys, e então gere uma chave api.
+
